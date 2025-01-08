@@ -1,0 +1,9 @@
+{% for blogpage in blogpage %}
+    <img
+        width="100"
+        src="{{ blogpage.image.url }}"
+        alt="{{ blogpage.title }}"
+    >
+    <p>{{ blogpage.title }} - {{ blogpage.content }}</p>
+    <hr>
+{% endfor %}
